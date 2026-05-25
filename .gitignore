@@ -1,0 +1,62 @@
+# --- Python bytecode / cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- OS / editor noise ---
+.DS_Store
+.vscode/
+.idea/
+.streamlit/
+
+# --- Local environment / secrets ---
+.env
+.env.*
+*.pem
+*.key
+*.crt
+*.p12
+secrets.*
+credentials*
+
+# --- Runtime logs / temp ---
+*.log
+logs/
+tmp/
+.cache/
+
+# --- App-local/generated data (keep folders, ignore contents where needed) ---
+# Ignore all local data artifacts
+data/
+
+# Chroma vector index and local DB artifacts
+data/chroma_index/
+*.sqlite
+*.sqlite3
+*.db
+
+# Local student profile data may contain PII
+# Keep directory structure by allowing an optional placeholder file
+# (add data/student_profiles/.gitkeep if desired)
+data/student_profiles/*.json
+
+# Generated evaluation outputs
+# Keep eval code; ignore result artifacts
+eval/results/*.csv
+eval/results/*.json
+eval/results/*.txt
+
+# Optional: ignore local slide drops (can be removed if you want slides in git)
+slides/
