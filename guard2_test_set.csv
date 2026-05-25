@@ -1,0 +1,141 @@
+question,label,source
+What is the Main method in C# and why does every program need one?,IN_DOMAIN,Module 1 - Intro to CS
+How do you print text to the console in C#?,IN_DOMAIN,Module 1 - Intro to CS
+What is string concatenation and how do you use the + operator with strings?,IN_DOMAIN,Module 1 - Intro to CS
+What does Console.WriteLine() do differently from Console.Write()?,IN_DOMAIN,Module 1 - Intro to CS
+What is a comment in code and what characters do you use for comments in C#?,IN_DOMAIN,Module 1 - Intro to CS
+What is a .cs file and what does it contain?,IN_DOMAIN,Module 1 - Intro to CS
+What is a variable and how do you declare one in C#?,IN_DOMAIN,Module 2 - Type Systems
+"What is the difference between int, double, and string data types?",IN_DOMAIN,Module 2 - Type Systems
+How do you read input from the user in a console program?,IN_DOMAIN,Module 2 - Type Systems
+What does int.Parse() do and when would you use it?,IN_DOMAIN,Module 2 - Type Systems
+What is a data type and why does it matter when declaring a variable?,IN_DOMAIN,Module 2 - Type Systems
+How do you convert a string to an integer in C#?,IN_DOMAIN,Module 2 - Type Systems
+What is the difference between declaring and initializing a variable?,IN_DOMAIN,Module 2 - Type Systems
+How does an if-else statement work in C#?,IN_DOMAIN,Module 3 - Selection Structures
+What is a switch statement and when would you use it instead of if-else?,IN_DOMAIN,Module 3 - Selection Structures
+How do you check if a number is greater than another number in C#?,IN_DOMAIN,Module 3 - Selection Structures
+What happens if the condition in an if statement is false and there is no else?,IN_DOMAIN,Module 3 - Selection Structures
+How do you use Math.Floor() in C#?,IN_DOMAIN,Module 3 - Selection Structures
+What does the break statement do inside a switch block?,IN_DOMAIN,Module 3 - Selection Structures
+What is a while loop and how does it work?,IN_DOMAIN,Module 4 - Loop Structures
+What is a for loop and how is it different from a while loop?,IN_DOMAIN,Module 4 - Loop Structures
+How do you print only even numbers between 50 and 100 using a loop?,IN_DOMAIN,Module 4 - Loop Structures
+What does the modulo operator % do?,IN_DOMAIN,Module 4 - Loop Structures
+What is an infinite loop and how do you avoid it?,IN_DOMAIN,Module 4 - Loop Structures
+How do you use a loop to sum numbers entered by the user?,IN_DOMAIN,Module 4 - Loop Structures
+What is the difference between a for loop and a do-while loop?,IN_DOMAIN,Module 4 - Loop Structures
+What is a method in C# and how do you define one?,IN_DOMAIN,Module 5 - Methods
+What is the difference between a void method and a method that returns a value?,IN_DOMAIN,Module 5 - Methods
+How do you pass parameters to a method?,IN_DOMAIN,Module 5 - Methods
+What does the return statement do inside a method?,IN_DOMAIN,Module 5 - Methods
+How do you call a method from inside Main?,IN_DOMAIN,Module 5 - Methods
+What is method overloading?,IN_DOMAIN,Module 5 - Methods
+How would you write a method that finds the maximum of three numbers?,IN_DOMAIN,Module 5 - Methods
+What is a class in C# and how is it different from a method?,IN_DOMAIN,Module 6 - Classes
+What is a constructor and what does it do?,IN_DOMAIN,Module 6 - Classes
+What is the difference between a public and private variable in a class?,IN_DOMAIN,Module 6 - Classes
+How do you create an object from a class in C#?,IN_DOMAIN,Module 6 - Classes
+What are getter and setter methods and why are they used?,IN_DOMAIN,Module 6 - Classes
+What does the keyword new do when creating an object?,IN_DOMAIN,Module 6 - Classes
+What is an array and how do you declare one in C#?,IN_DOMAIN,Module 7 - Arrays
+How do you access elements in an array using an index?,IN_DOMAIN,Module 7 - Arrays
+How do you use a for loop to iterate through every element of an array?,IN_DOMAIN,Module 7 - Arrays
+What happens if you try to access an index outside the array bounds?,IN_DOMAIN,Module 7 - Arrays
+How do you find the length of an array in C#?,IN_DOMAIN,Module 7 - Arrays
+What is a 2D array and how is it different from a regular array?,IN_DOMAIN,Module 7 - Arrays
+What is linear search and how does it work?,IN_DOMAIN,Module 8 - Search and Sort
+What is binary search and why is it faster than linear search?,IN_DOMAIN,Module 8 - Search and Sort
+What does it mean to sort an array?,IN_DOMAIN,Module 8 - Search and Sort
+How does binary search require the array to be organized before it can work?,IN_DOMAIN,Module 8 - Search and Sort
+How do you use Math.Max() and Math.Min() methods in C#?,IN_DOMAIN,Module 5 - Methods
+What is the difference between C# and Java syntax?,BOUNDARY,Adjacent - language comparison
+Is Python easier to learn than C#?,IN_DOMAIN,CSE1300+CSE1321 - both languages covered
+What is recursion and how is it different from a loop?,BOUNDARY,Adjacent - recursion not in syllabus
+How does memory allocation work when you create an object?,BOUNDARY,Adjacent - memory management
+What is the difference between a stack and a heap in memory?,BOUNDARY,Adjacent - memory
+What is an algorithm and how do you measure its efficiency?,BOUNDARY,Adjacent - algorithm complexity
+What is Big O notation?,BOUNDARY,Adjacent - complexity analysis
+How does a compiler turn C# code into something the computer can run?,BOUNDARY,Adjacent - compilation
+What is the difference between a compiled and interpreted language?,BOUNDARY,Adjacent - language theory
+What is inheritance in object-oriented programming?,BOUNDARY,Adjacent - OOP beyond scope
+What is a linked list and how is it different from an array?,BOUNDARY,Adjacent - data structures
+What is exception handling and what does try-catch do?,BOUNDARY,Adjacent - error handling
+What is a namespace in C# and why do you use it?,BOUNDARY,Adjacent - language feature
+How does a hash table work?,BOUNDARY,Adjacent - data structures
+What is the difference between == and .Equals() in C#?,BOUNDARY,Adjacent - object equality
+What is multithreading and would it make my program faster?,BOUNDARY,Adjacent - concurrency
+What is the difference between bubble sort and selection sort?,BOUNDARY,Adjacent - sorting algorithms
+What is a static method and how is it different from an instance method?,BOUNDARY,Adjacent - OOP
+How does the .NET framework relate to C#?,BOUNDARY,Adjacent - platform
+What is an interface in C# and when would you use one?,BOUNDARY,Adjacent - advanced OOP
+What is the capital of France?,OUT_OF_DOMAIN,Geography
+How do you make sourdough bread?,OUT_OF_DOMAIN,Cooking
+Who wrote the play Hamlet?,OUT_OF_DOMAIN,Literature
+What is the boiling point of water?,OUT_OF_DOMAIN,Chemistry
+How does photosynthesis work?,OUT_OF_DOMAIN,Biology
+What is quantum computing?,OUT_OF_DOMAIN,Advanced physics
+Who was the first US president?,OUT_OF_DOMAIN,History
+What is the speed of light?,OUT_OF_DOMAIN,Physics
+How do you calculate compound interest?,OUT_OF_DOMAIN,Finance
+What is the GDP of Germany?,OUT_OF_DOMAIN,Economics
+How many bones are in the human body?,OUT_OF_DOMAIN,Biology/Anatomy
+What is the Pythagorean theorem?,OUT_OF_DOMAIN,Mathematics - not CS
+Who painted the Mona Lisa?,OUT_OF_DOMAIN,Art history
+What causes earthquakes?,OUT_OF_DOMAIN,Geology
+How far is the moon from Earth?,OUT_OF_DOMAIN,Astronomy
+What is inflation?,OUT_OF_DOMAIN,Economics
+How do vaccines work?,OUT_OF_DOMAIN,Medicine
+What language is spoken in Brazil?,OUT_OF_DOMAIN,Geography/Culture
+What is the largest ocean?,OUT_OF_DOMAIN,Geography
+How do you play chess?,OUT_OF_DOMAIN,Games
+What is a stock market?,OUT_OF_DOMAIN,Finance
+What year did World War II end?,OUT_OF_DOMAIN,History
+How does a car engine work?,OUT_OF_DOMAIN,Mechanical engineering
+What is the Roman Empire?,OUT_OF_DOMAIN,History
+How do you do a deadlift at the gym?,OUT_OF_DOMAIN,Fitness
+What is the square root of 144?,OUT_OF_DOMAIN,Mathematics - not CS
+What is climate change?,OUT_OF_DOMAIN,Environmental science
+Who is Elon Musk?,OUT_OF_DOMAIN,General knowledge
+What is the plot of The Lord of the Rings?,OUT_OF_DOMAIN,Literature
+How do airplanes stay in the air?,OUT_OF_DOMAIN,Physics/Aeronautics
+What is decomposition in computational thinking?,IN_DOMAIN,CSE1300 - A1 Computational Thinking
+What is algorithmic thinking?,IN_DOMAIN,CSE1300 - A1 Computational Thinking
+What is abstraction in computer science?,IN_DOMAIN,CSE1300 - A1 Computational Thinking
+What is pattern recognition in computational thinking?,IN_DOMAIN,CSE1300 - A1 Computational Thinking
+What are the four pillars of computational thinking?,IN_DOMAIN,CSE1300 - A1 Computational Thinking
+How do you write a step-by-step algorithm?,IN_DOMAIN,CSE1300 - A1 Computational Thinking
+What is an algorithm?,IN_DOMAIN,CSE1300 - A1 Computational Thinking
+What is a PivotTable in Excel and what is it used for?,IN_DOMAIN,CSE1300 - A2 Excel
+What does an IF formula do in Excel?,IN_DOMAIN,CSE1300 - A2 Excel
+How do you import a CSV file into Excel?,IN_DOMAIN,CSE1300 - A2 Excel
+What is the difference between a column chart and a line graph?,IN_DOMAIN,CSE1300 - A2 Excel
+What is data cleaning and why is it important?,IN_DOMAIN,CSE1300 - A2 Excel
+How do you sort data in Excel?,IN_DOMAIN,CSE1300 - A2 Excel
+What is a CSV file?,IN_DOMAIN,CSE1300 - A2 Excel
+What is the difference between data and information?,IN_DOMAIN,CSE1300 - A3 DBMS
+What is a DBMS and how is it different from a file system?,IN_DOMAIN,CSE1300 - A3 DBMS
+What is a relational database?,IN_DOMAIN,CSE1300 - A3 DBMS
+What is SQL?,IN_DOMAIN,CSE1300 - A3 DBMS
+What is the difference between DDL and DML in SQL?,IN_DOMAIN,CSE1300 - A3 DBMS
+How do you write a CREATE TABLE statement in SQL?,IN_DOMAIN,CSE1300 - A3 DBMS
+How do you write a SELECT statement to retrieve data from a table?,IN_DOMAIN,CSE1300 - A3 DBMS
+What does an INSERT statement do in SQL?,IN_DOMAIN,CSE1300 - A3 DBMS
+What does an UPDATE statement do in SQL?,IN_DOMAIN,CSE1300 - A3 DBMS
+What is a primary key in a database?,IN_DOMAIN,CSE1300 - A3 DBMS
+What is the difference between NoSQL and relational databases?,IN_DOMAIN,CSE1300 - A3 DBMS
+What does DCL stand for in SQL and what does it control?,IN_DOMAIN,CSE1300 - A3 DBMS
+What does TCL stand for in SQL?,IN_DOMAIN,CSE1300 - A3 DBMS
+What is DQL and how is it different from DML?,IN_DOMAIN,CSE1300 - A3 DBMS
+How do you print output in Python?,IN_DOMAIN,CSE1300 - A4 Python Basics
+How do you write a for loop in Python?,IN_DOMAIN,CSE1300 - A4 Python Basics
+How do you write an if-elif-else statement in Python?,IN_DOMAIN,CSE1300 - A4 Python Basics
+How do you get user input in Python?,IN_DOMAIN,CSE1300 - A4 Python Basics
+How do you format a number to 2 decimal places in Python?,IN_DOMAIN,CSE1300 - A4 Python Basics
+What are arithmetic operators in Python?,IN_DOMAIN,CSE1300 - A4 Python Basics
+How do you calculate an average in Python?,IN_DOMAIN,CSE1300 - A4 Python Basics
+How is Python different from C# for beginners?,IN_DOMAIN,CSE1300+CSE1321 - both languages covered
+Can I use SQL with Python?,IN_DOMAIN,CSE1300 - A3 DBMS + A4 Python
+How is Excel data analysis related to databases?,IN_DOMAIN,CSE1300 - A2 Excel + A3 DBMS
+What is the difference between a database and a spreadsheet?,IN_DOMAIN,CSE1300 - A2 Excel + A3 DBMS
+How does algorithmic thinking from CSE1300 apply to writing loops in CSE1321?,IN_DOMAIN,CSE1300 + CSE1321 cross-course

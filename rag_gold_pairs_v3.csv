@@ -1,0 +1,53 @@
+question,expected_concept,module,notes
+What does Console.WriteLine() do?,console output,Module 1,A Fact node CLAIMS_ABOUT 'Console Output' should appear in top-5 retrieved
+How do you use string concatenation with +?,math operators - addition,Module 1,A Fact node CLAIMS_ABOUT 'String Concatenation' should appear in top-5 retrieved
+What is the Main method?,main method,Module 1,A Fact node CLAIMS_ABOUT 'Main Method' should appear in top-5 retrieved
+What are comments in C# and how do you write them?,comments,Module 1,A Fact node CLAIMS_ABOUT 'Comments' should appear in top-5 retrieved
+What is a variable and how do you declare it?,variables,Module 2,A Fact node CLAIMS_ABOUT 'Variable Declaration' should appear in top-5 retrieved
+What is the difference between int and double?,data types,Module 2,A Fact node CLAIMS_ABOUT 'Data Types' should appear in top-5 retrieved
+How do you convert a string to an integer using int.Parse?,type conversion,Module 2,A Fact node CLAIMS_ABOUT 'Type Conversion' should appear in top-5 retrieved
+How do you read input from the user with Console.ReadLine?,reading user input,Module 2,A Fact node CLAIMS_ABOUT 'Console Input' should appear in top-5 retrieved
+What is a data type?,data types,Module 2,A Fact node CLAIMS_ABOUT 'Data Types' should appear in top-5 retrieved
+How does an if-else statement work?,if-else statement,Module 3,A Fact node CLAIMS_ABOUT 'If-Else Statement' should appear in top-5 retrieved
+When do you use a switch statement?,switch,Module 3,A Fact node CLAIMS_ABOUT 'Switch Statement' should appear in top-5 retrieved
+What does the break keyword do in a switch?,switch statement,Module 3,A Fact node CLAIMS_ABOUT 'Switch Statement' should appear in top-5 retrieved
+How do you check if two values are equal in a condition?,comparison operators,Module 3,A Fact node CLAIMS_ABOUT 'Comparison Operators' should appear in top-5 retrieved
+What is a boolean expression?,boolean expression,Module 3,A Fact node CLAIMS_ABOUT 'Boolean Expressions' should appear in top-5 retrieved
+How does a while loop work?,while loop,Module 4,A Fact node CLAIMS_ABOUT 'While Loop' should appear in top-5 retrieved
+How does a for loop work?,for loop,Module 4,A Fact node CLAIMS_ABOUT 'For Loop' should appear in top-5 retrieved
+What does the modulo operator do?,modulo operator,Module 4,A Fact node CLAIMS_ABOUT 'Modulo Operator' should appear in top-5 retrieved
+How do you avoid an infinite loop?,loop termination,Module 4,A Fact node CLAIMS_ABOUT 'Loop Control' should appear in top-5 retrieved
+What is a loop counter variable?,loop counter,Module 4,A Fact node CLAIMS_ABOUT 'For Loop' should appear in top-5 retrieved
+How do you define a method in C#?,method definition,Module 5,A Fact node CLAIMS_ABOUT 'Method Definition' should appear in top-5 retrieved
+What does a void method return?,void method,Module 5,A Fact node CLAIMS_ABOUT 'Return Types' should appear in top-5 retrieved
+How do you pass arguments to a method?,method parameters,Module 5,A Fact node CLAIMS_ABOUT 'Method Parameters' should appear in top-5 retrieved
+What does the return statement do?,return statement,Module 5,A Fact node CLAIMS_ABOUT 'Return Statement' should appear in top-5 retrieved
+How do you call a method from Main?,method calling,Module 5,A Fact node CLAIMS_ABOUT 'Method Call' should appear in top-5 retrieved
+What is a class in C#?,class definition,Module 6,A Fact node CLAIMS_ABOUT 'Class Definition' should appear in top-5 retrieved
+What does a constructor do?,constructor,Module 6,A Fact node CLAIMS_ABOUT 'Constructor' should appear in top-5 retrieved
+What is the difference between public and private?,access modifiers,Module 6,A Fact node CLAIMS_ABOUT 'Access Modifiers' should appear in top-5 retrieved
+How do you create an object from a class?,creating and using objects,Module 6,A Fact node CLAIMS_ABOUT 'Object Instantiation' should appear in top-5 retrieved
+What are getters and setters?,getters and setters,Module 6,A Fact node CLAIMS_ABOUT 'Getter Setter Methods' should appear in top-5 retrieved
+What does the new keyword do?,object instantiation,Module 6,A Fact node CLAIMS_ABOUT 'Object Instantiation' should appear in top-5 retrieved
+What is an array?,arrays,Module 7,A Fact node CLAIMS_ABOUT 'Arrays' should appear in top-5 retrieved
+How do you access elements in an array?,arrays,Module 7,A Fact node CLAIMS_ABOUT 'Array Indexing' should appear in top-5 retrieved
+How do you find the length of an array?,resizing arrays,Module 7,A Fact node CLAIMS_ABOUT 'Array Length' should appear in top-5 retrieved
+How do you use a loop to go through an array?,multi-dimensional arrays,Module 7,A Fact node CLAIMS_ABOUT 'Array Iteration' should appear in top-5 retrieved
+What is a 2D array?,multi-dimensional arrays,Module 7,A Fact node CLAIMS_ABOUT 'Two-Dimensional Arrays' should appear in top-5 retrieved
+How does linear search work?,linear search,Module 8,A Fact node CLAIMS_ABOUT 'Linear Search' should appear in top-5 retrieved
+How does binary search work?,binary search,Module 8,A Fact node CLAIMS_ABOUT 'Binary Search' should appear in top-5 retrieved
+Why does binary search require a sorted array?,binary search,Module 8,A Fact node CLAIMS_ABOUT 'Binary Search' should appear in top-5 retrieved
+What is the difference between linear search and binary search?,linear search,Module 8,A Fact node CLAIMS_ABOUT 'Linear Search' should appear in top-5 retrieved
+How do you sort values in an array?,sorting arrays,Module 8,A Fact node CLAIMS_ABOUT Sorting Algorithms should appear in top-5 retrieved
+What is decomposition in computational thinking?,decomposition,CSE1300 - A1,A Fact node CLAIMS_ABOUT 'Decomposition' should appear in top-5 retrieved
+What is abstraction in computer science?,abstraction,CSE1300 - A1,A Fact node CLAIMS_ABOUT 'Abstraction' should appear in top-5 retrieved
+What is pattern recognition?,pattern recognition,CSE1300 - A1,A Fact node CLAIMS_ABOUT 'Pattern Recognition' should appear in top-5 retrieved
+What is an algorithm?,algorithmic thinking,CSE1300 - A1,A Fact node CLAIMS_ABOUT 'Algorithm' should appear in top-5 retrieved
+What is a PivotTable in Excel?,common spreadsheet tools for data transformation,CSE1300 - A2,A Fact node CLAIMS_ABOUT 'PivotTable' should appear in top-5 retrieved
+What does IF() do in Excel?,conditional statement,CSE1300 - A2,A Fact node CLAIMS_ABOUT 'Excel IF Formula' should appear in top-5 retrieved
+What is a relational database?,types of dbms,CSE1300 - A3,A Fact node CLAIMS_ABOUT 'Relational Database' should appear in top-5 retrieved
+What is the difference between DDL and DML?,data definition language,CSE1300 - A3,A Fact node CLAIMS_ABOUT 'SQL DDL DML' should appear in top-5 retrieved
+How do you write a SELECT statement?,sql select statement,CSE1300 - A3,A Fact node CLAIMS_ABOUT 'SQL SELECT' should appear in top-5 retrieved
+What is a primary key?,primary key,CSE1300 - A3,A Fact node CLAIMS_ABOUT 'Primary Key' should appear in top-5 retrieved
+How do you write a for loop in Python?,loops,CSE1300 - A4,A Fact node CLAIMS_ABOUT 'Python For Loop' should appear in top-5 retrieved
+How do you use input() in Python?,reading user input,CSE1300 - A4,A Fact node CLAIMS_ABOUT 'Python Input' should appear in top-5 retrieved

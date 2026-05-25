@@ -1,0 +1,100 @@
+\section{Qualitative System Traces}
+\label{app:traces}
+
+The following three traces are captured from the live \textbf{EduSHIELD} system deployed on the Programming Fundamentals course. Each trace records: the student query; Stage~1 Boundary Guard verdict with semantic similarity $s_{\text{sem}}$; Stage~2 KG-RAG retrieval with cosine similarities; Stage~3 LLM response text; and Stage~4 Hallucination Guard verdict with positive score $s^+$ (response claim vs.\ KG claims), negation score $s^-$ (response claim vs.\ KG negations), gap $s^{-} - s^{+}$, and the final delivery decision.
+
+\subsection*{D.1\quad Verified In-Domain Response}
+The student asks a legitimate in-domain question about for loops. The Boundary Guard passes it (IN\_DOMAIN, $s_{\text{sem}}=0.7132$). The LLM response is grounded in KG-retrieved facts. The Hallucination Guard labels the claim \textsc{Verified} ($s^+ \geq \theta_v = 0.52$, $s^{-} - s^{+} < \delta$). The response is delivered as-is.
+\begin{small}
+\begin{verbatim}
+Student query : "What does a for loop do in python?"
+
+Stage 1 -- Boundary Guard (pre-generation):
+  s_sem          = 0.7132
+  matched concept= "for loops"
+  classification = IN_DOMAIN
+
+Stage 2 -- KG-RAG Retrieval (top-3 unique facts):
+  [1] concept = "FOR LOOPS"
+      claim   = "A for loop in Python iterates over each item in a sequence"
+      sim     = 0.7132
+
+Stage 3 -- LLM Generation:
+  "A for loop iterates over a sequence of values a fixed number of times."
+
+Stage 4 -- Hallucination Guard (post-generation):
+  claim   = "A for loop iterates over a sequence of values a fixed number of t"
+  s+      = 0.5812   (cosine sim: response claim vs KG claims)
+  s-      = 0.5419   (cosine sim: response claim vs KG negations)
+  s- - s+ = -0.0393  (delta threshold delta = 0.04)
+  verdict = VERIFIED
+
+  Overall verdict = VERIFIED
+
+Delivered to student: VERIFIED
+  (LLM response delivered as-is)
+\end{verbatim}
+\end{small}
+
+\subsection*{D.2\quad Contradicted Response (Hallucination Caught)}
+A deliberately incorrect claim is injected as the LLM response: the system asserts that a while loop checks its condition \emph{after} the loop body executes (a do-while behaviour, not a while behaviour). The Hallucination Guard finds $s^- > s^+$ by a gap of $+0.1027 > \delta = 0.04$, triggering \textsc{Contradicted}. The original response is replaced by a KG-sourced correction.
+\begin{small}
+\begin{verbatim}
+Student query : "How does a while loop work?"
+
+Stage 1 -- Boundary Guard (pre-generation):
+  s_sem          = 0.6833
+  matched concept= "while loop"
+  classification = IN_DOMAIN
+
+Stage 2 -- KG-RAG Retrieval (top-3 unique facts):
+  [1] concept = "WHILE LOOP"
+      claim   = "A while loop checks its condition before executing the body"
+      sim     = 0.6833
+
+Stage 3 -- LLM Generation:
+  "A while loop checks the condition after executing the loop body."
+
+Stage 4 -- Hallucination Guard (post-generation):
+  claim   = "A while loop checks the condition after executing the loop body."
+  s+      = 0.5744   (cosine sim: response claim vs KG claims)
+  s-      = 0.6771   (cosine sim: response claim vs KG negations)
+  s- - s+ = +0.1027  (delta threshold delta = 0.04)
+  verdict = CONTRADICTED
+
+  Overall verdict = CONTRADICTED
+
+  KG-sourced correction appended:
+  "A while loop checks its condition before executing the body.
+ If the condition is false initially, the loop body never runs."
+  [source: cse1321-loops.pptx]
+
+Delivered to student: CONTRADICTED
+  (original LLM claim replaced by KG correction above)
+\end{verbatim}
+\end{small}
+
+\subsection*{D.3\quad Boundary Redirect (No LLM Call)}
+The student asks about recursion, a concept mentioned in course slides 
+but reserved for a later course in the sequence. The token-level 
+boundary match ($m_{\text{bnd}}(\text{`recursion'}) = 1$) fires before 
+the semantic score is evaluated, triggering an immediate \textsc{Boundary} 
+verdict ($s_{\text{sem}} = 0.4501$, which would have passed the in-domain 
+semantic threshold alone). No LLM call is made; a redirect message is 
+delivered directly.
+\begin{small}
+\begin{verbatim}
+Student query : "Can you explain recursion to me?"
+
+Stage 1 -- Boundary Guard (pre-generation):
+  s_sem          = 0.4501
+  matched concept= "loops"
+  classification = BOUNDARY
+  m_bnd("recursion") = 1  --> priority override fires
+  --> REDIRECT: No LLM call made.
+
+Delivered to student:
+  "Recursion is a topic covered in the next course in the sequence.
+   Would you like to review for loops or while loops instead?"
+\end{verbatim}
+\end{small}
